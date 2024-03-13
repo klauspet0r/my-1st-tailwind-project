@@ -12,6 +12,11 @@ module.exports = {
 		'./pages/**/*.{html,js}',
 		'./components/**/*.{html,js}',
 		'./src/routes/*.{html,js,svelte}'
-	]
+	],
+	theme: {
+		fontFamily: {
+			mono: ['mono', 'ui-monospace']
+		}
+	}
 	// ...
 };

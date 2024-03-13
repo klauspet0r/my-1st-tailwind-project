@@ -1,5 +1,10 @@
+<script lang="ts">
+	import Button from '../components/Button.svelte';
+	const globalMargin: string = 'm-20';
+</script>
+
 <div
-	class="flex justify-center border-4 border-green-500 rounded-2xl text-4xl p-10 m-10 text-center"
+	class="flex justify-center border-2 border-blue-700 rounded-2xl text-4xl p-10 {globalMargin} text-center"
 >
 	<svg xmlns="http://www.w3.org/2000/svg" width="107" height="128" viewBox="0 0 107 128"
 		><title>svelte-logo</title><path
@@ -10,16 +15,25 @@
 			style="fill:#fff"
 		/></svg
 	>
-	<div class="mt-10 ml-4">playground ⛳</div>
+	<div class="mt-10 ml-4">Playground ⛳</div>
 </div>
 
-<div class="flex justify-row border-2 border-green-500 grid-cols-5 gap-4">
-	<div class="border-2 border-green-500 col-span-1">LeftSideBar</div>
-	<div class="border-2 border-green-500 col-span-4">Main Content</div>
+<div
+	class="flex justify-center border-2 border-blue-700 rounded-2xl grid-cols-5 gap-4 p-4 {globalMargin}"
+>
+	<div class="border-2 border-blue-700 rounded-l col-span-1 bg-blue-200 m-2 p-20">
+		<Button buttonLabel={'🌭🕵️‍♀️ Hotdogs'}></Button>
+		<Button buttonLabel={'🍟👳‍♂️ Fries'}></Button>
+		<Button buttonLabel={'🍔🎅 Burgers'}></Button>
+		<Button buttonLabel={'🍕🎅 Pizza'}></Button>
+	</div>
+	<div class="border-2 border-blue-700 rounded-l col-span-4 bg-blue-200 text-center m-2 p-40">
+		🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧
+	</div>
 </div>
 
 <style lang="postcss">
 	:global(html) {
-		background-color: theme(colors.green.200);
+		background-color: theme(colors.blue.100);
 	}
 </style>
