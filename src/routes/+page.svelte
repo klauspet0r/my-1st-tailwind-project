@@ -1,6 +1,12 @@
 <script lang="ts">
 	import Button from '../components/Button.svelte';
 	const globalMargin: string = 'm-20';
+	let pageIndex: number = 0;
+
+	function setPageIndex(index: number) {
+		pageIndex = index;
+		console.log(pageIndex);
+	}
 </script>
 
 <div
@@ -18,17 +24,15 @@
 	<div class="mt-10 ml-4">Playground ⛳</div>
 </div>
 
-<div
-	class="flex justify-center border-2 border-blue-700 rounded-2xl grid-cols-5 gap-2 p-2 {globalMargin}"
->
+<div class="flex border-2 border-blue-700 rounded-2xl grid-cols-5 gap-2 p-2 {globalMargin}">
 	<div class="border-2 border-blue-700 rounded-xl col-span-1 bg-blue-200 m-2 p-20">
-		<Button buttonLabel={'🌭🕵️‍♀️ Hotdogs'}></Button>
-		<Button buttonLabel={'🍟👳‍♂️ Fries'}></Button>
-		<Button buttonLabel={'🍔🎅 Burgers'}></Button>
-		<Button buttonLabel={'🍕🎅 Pizza'}></Button>
+		<Button buttonLabel={'🍔🎅 Burgers'} on:buttonClick={() => setPageIndex(0)}></Button>
+		<Button buttonLabel={'🍟👳‍♂️ Fries'} on:buttonClick={() => setPageIndex(1)}></Button>
 	</div>
-	<div class="border-2 border-blue-700 rounded-xl col-span-4 bg-blue-200 text-center m-2 p-40">
-		🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😑😑😴😦😦😧🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷
+
+	<div class="flex border-2 border-blue-700 rounded-xl col-span-4 bg-blue-200 text-center m-2 p-40">
+		{#if pageIndex == 0}🍔🍔🍔🍔🍔🍔🍔🍔🍔🍔{/if}
+		{#if pageIndex == 1}🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟{/if}
 	</div>
 </div>
 
