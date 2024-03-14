@@ -9,9 +9,9 @@
 
 module.exports = {
 	content: [
-		'./pages/**/*.{html,js}',
-		'./components/**/*.{html,js}',
-		'./src/routes/*.{html,js,svelte}'
+		'./pages/**/*.{html,js,svelte}',
+		'./src/components/**/*.{html,js,svelte}',
+		'./src/routes/**/*.{html,js,svelte}'
 	],
 	theme: {
 		fontFamily: {
