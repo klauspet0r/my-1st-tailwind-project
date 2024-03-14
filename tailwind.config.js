@@ -17,6 +17,6 @@ module.exports = {
 		fontFamily: {
 			mono: ['mono', 'ui-monospace']
 		}
-	}
-	// ...
+	},
+	plugins: [require('daisyui')]
 };
