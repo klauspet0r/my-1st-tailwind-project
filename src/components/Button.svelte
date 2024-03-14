@@ -3,6 +3,6 @@
 </script>
 
 <button
-	class="border-2 border-blue-500 rounded-xl p-1 hover:bg-blue-300 active:bg-blue-400 text-nowrap m-1"
+	class="border-2 border-blue-700 rounded-2xl hover:bg-blue-700 active:bg-black text-nowrap m-2 p-2"
 	>{buttonLabel}</button
 >

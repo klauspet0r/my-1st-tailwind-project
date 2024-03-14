@@ -19,15 +19,15 @@
 </div>
 
 <div
-	class="flex justify-center border-2 border-blue-700 rounded-2xl grid-cols-5 gap-4 p-4 {globalMargin}"
+	class="flex justify-center border-2 border-blue-700 rounded-2xl grid-cols-5 gap-2 p-2 {globalMargin}"
 >
-	<div class="border-2 border-blue-700 rounded-l col-span-1 bg-blue-200 m-2 p-20">
+	<div class="border-2 border-blue-700 rounded-xl col-span-1 bg-blue-200 m-2 p-20">
 		<Button buttonLabel={'🌭🕵️‍♀️ Hotdogs'}></Button>
 		<Button buttonLabel={'🍟👳‍♂️ Fries'}></Button>
 		<Button buttonLabel={'🍔🎅 Burgers'}></Button>
 		<Button buttonLabel={'🍕🎅 Pizza'}></Button>
 	</div>
-	<div class="border-2 border-blue-700 rounded-l col-span-4 bg-blue-200 text-center m-2 p-40">
+	<div class="border-2 border-blue-700 rounded-xl col-span-4 bg-blue-200 text-center m-2 p-40">
 		🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧🍟🍕🍔🍿🧈🥪🥡🥡🌮🧈🥗🥟🥟🍠🥩🥩🍠🥙🥪🥪🥪🥙👱‍♂️👸👸🎅👱‍♂️👨‍🦰👨‍🦱👳‍♀️🕵️‍♀️👱‍♂️👳‍♀️🕵️‍♀️👱‍♂️🕉✝💔🛐🚡🚈🏙🏚🏠🏢🏣🏤🕌🕌🧳🧼⛅⛈🌤🧷⛱⚡❄☃🔥💧😑😴😦😦😧
 	</div>
 </div>
