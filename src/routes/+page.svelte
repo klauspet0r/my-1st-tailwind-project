@@ -1,14 +1,36 @@
 <div class="hero min-h-screen" style="background-image: url(/src/assets/IMG_4055.jpeg);">
 	<div class="hero-overlay bg-opacity-30"></div>
-	<div class="card lg:card-side bg-base-100 shadow-xl">
-		<figure>
-			<img src="/src/assets/tusche_small.jpeg" alt="Album" />
-		</figure>
-		<div class="card-body">
-			<h2 class="card-title">Nerds just wanna have fun</h2>
-			<p>Click the button to launch</p>
-			<div class="card-actions justify-end">
-				<button class="btn btn-primary">Launch</button>
+	<div class="carousel w-8/12">
+		<div id="slide1" class="carousel-item relative w-full object-contain">
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<img src="/src/assets/DSC01382.jpg" class="w-full" />
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide4" class="btn btn-circle">❮</a>
+				<a href="#slide2" class="btn btn-circle">❯</a>
+			</div>
+		</div>
+		<div id="slide2" class="carousel-item relative w-full object-contain">
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<img src="/src/assets/DSC01419.jpg" class="w-full" />
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide1" class="btn btn-circle">❮</a>
+				<a href="#slide3" class="btn btn-circle">❯</a>
+			</div>
+		</div>
+		<div id="slide3" class="carousel-item relative w-full object-contain">
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<img src="/src/assets/DSC01493.jpg" class="w-full" />
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide2" class="btn btn-circle">❮</a>
+				<a href="#slide4" class="btn btn-circle">❯</a>
+			</div>
+		</div>
+		<div id="slide4" class="carousel-item relative w-full object-contain">
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<img src="/src/assets/DSC01509.jpg" class="w-full" />
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide3" class="btn btn-circle">❮</a>
+				<a href="#slide1" class="btn btn-circle">❯</a>
 			</div>
 		</div>
 	</div>
